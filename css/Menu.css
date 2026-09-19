@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    font-size: 16px;
+}
+.wrapper{
+    background: linear-gradient(135deg, #faf6ec 0%, #efe6d4 55%, #e8d9bc 100%);
+    height: 160hv;
+}
+.container{
+    width: 1400px;
+    margin: 0 auto;
+}
+header{
+    padding: 50px 0;
+}
+.Enjoyit{
+    font-family:'Fraunces', serif;
+   font-size:22px;
+   font-weight:700;
+   letter-spacing:-0.01em;
+   color:#241811;
+   margin-left: 95px;
+}
+.hero_container {
+  color:#321d1d;
+}
+
+.hero--info h1{
+    font-family:'Karla';
+    font-size:50px;
+    font-weight:1000; 
+    margin-left:170px; 
+    margin-top:10px;
+}
+.hero--info h2{
+    font-family:'Karla', sans-serif;
+    font-size:15px;
+    font-weight:300;
+    line-height:1.8;
+    color:#241811;
+    max-width:47ch;   
+    margin-left: 800px;
+    margin-top: -150px;
+}
+.menu_table {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px; 
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.column {
+    flex: 1;
+}
+.category_title {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #a0522d;
+    text-transform: uppercase;
+    border-bottom: 1px solid #dcd3be;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+.menu_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #dcd3be; 
+    padding: 20px 0; 
+}
+
+.item_name {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    color: #241811;
+    margin-bottom: 6px;
+}
+.item_desc {
+    font-size: 14px;
+    color: #6e655f;
+}
+
+.price {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #241811;
+}
+footer{
+    padding: 30px 0;
+    text-align: center;
+}
+footer p{
+    color:#583636;
+    font-size:14px;
+    margin: 0;  
+    margin-top: 20px;
+}
