@@ -1,100 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Enjoyit.Menu</title>
         <link rel="stylesheet" href="css/Menu.css">
     </head>
     <body>
-<div class="wrapper">
+        <div class="wrapper">
 
-    <header class="container">
-        <span class="Enjoyit">Enjoyit</span>
-    </header>
+            <header class="container">
+                <span class="Enjoyit">Enjoyit</span>
+            </header>
 
+            <main class="container">
+                <div class="hero--info">
+                    <h1>The menu</h1>
+                    <h2>Espresso, filter, and a short list of things to eat with them. Ask your barista what's brewing today.</h2>
+                </div>
 
-    <main class="container">
-            <div class="hero--info">
-                <h1>The menu</h1>
-                <h2>Espresso, filter, and a short list of things to eat with them. Ask your barista what's brewing today.</h2>
-            </div>
+                <div class="menu_table">
+                    <div class="column">
+                        <h2 class="category_title">ESPRESSO</h2>
 
-            <div class="menu_table">
-                
-                <div class="column">
-                    <h2 class="category_title">ESPRESSO</h2>
-                    
-                    <div class="menu_item">
-                        <div class="info_box">
-                            <h3 class="item_name">Espresso</h3>
-                            <p class="item_desc">Double shot, our house blend.</p>
+                        <div class="menu_item">
+                            <div class="info_box">
+                                <h3 class="item_name">Espresso</h3>
+                                <p class="item_desc">Double shot, our house blend.</p>
+                            </div>
+                            <div class="price">$3.50</div>
                         </div>
-                        <div class="price">$3.50</div>
+
+                        <div class="menu_item">
+                            <div class="info_box">
+                                <h3 class="item_name">Flat White</h3>
+                                <p class="item_desc">Two shots, steamed milk, thin foam.</p>
+                            </div>
+                            <div class="price">$4.75</div>
+                        </div>
+
+                        <div class="menu_item">
+                            <div class="info_box">
+                                <h3 class="item_name">Cappuccino</h3>
+                                <p class="item_desc">Equal parts espresso, milk, and foam.</p>
+                            </div>
+                            <div class="price">$4.50</div>
+                        </div>
+
+                        <div class="menu_item">
+                            <div class="info_box">
+                                <h3 class="item_name">Cortado</h3>
+                                <p class="item_desc">Espresso cut with warm milk, 1:1.</p>
+                            </div>
+                            <div class="price">$4.00</div>
+                        </div>
                     </div>
 
-                    <div class="menu_item">
-                        <div class="info_box">
-                            <h3 class="item_name">Flat White</h3>
-                            <p class="item_desc">Two shots, steamed milk, thin foam.</p>
+                    <div class="column">
+                        <h2 class="category_title">FILTER & COLD</h2>
+                        <div class="menu_item">
+                            <div class="info_box">
+                                <h3 class="item_name">Pour Over</h3>
+                                <p class="item_desc">Rotating single-origin, brewed to order.</p>
+                            </div>
+                            <div class="price">$5.00</div>
                         </div>
-                        <div class="price">$4.75</div>
-                    </div>
 
-                    <div class="menu_item">
-                        <div class="info_box">
-                            <h3 class="item_name">Cappuccino</h3>
-                            <p class="item_desc">Equal parts espresso, milk, and foam.</p>
+                        <div class="menu_item">
+                            <div class="info_box">
+                                <h3 class="item_name">Cold Brew</h3>
+                                <p class="item_desc">Steeped 18 hours, served over ice.</p>
+                            </div>
+                            <div class="price">$4.75</div>
                         </div>
-                        <div class="price">$4.50</div>
-                    </div>
 
-                    <div class="menu_item">
-                        <div class="info_box">
-                            <h3 class="item_name">Cortado</h3>
-                            <p class="item_desc">Espresso cut with warm milk, 1:1.</p>
+                        <div class="menu_item">
+                            <div class="info_box">
+                                <h3 class="item_name">Iced Latte</h3>
+                                <p class="item_desc">Double shot over milk and ice.</p>
+                            </div>
+                            <div class="price">$5.00</div>
                         </div>
-                        <div class="price">$4.00</div>
+
+                        <div class="menu_item">
+                            <div class="info_box">
+                                <h3 class="item_name">Matcha Latte</h3>
+                                <p class="item_desc">Ceremonial-grade matcha, oat or dairy milk</p>
+                            </div>
+                            <div class="price">$5.25</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="column">
-                    <h2 class="category_title">FILTER & COLD</h2>
-                    <div class="menu_item">
-                        <div class="info_box">
-                            <h3 class="item_name">Pour Over</h3>
-                            <p class="item_desc">Rotating single-origin, brewed to order.</p>
-                        </div>
-                        <div class="price">$5.00</div>
-                    </div>
+                <section id="beans" class="beans-section">
+                    <h2 class="category_title">COFFEE BEANS TO GO</h2>
+                    <p class="mode-note">Current mode: grid of cards. Change the class on the gallery container to "layout-list" or "layout-magazine" to see the other two views — the markup underneath never changes.</p>
 
-                    <div class="menu_item">
-                        <div class="info_box">
-                            <h3 class="item_name">Cold Brew</h3>
-                            <p class="item_desc">Steeped 18 hours, served over ice.</p>
-                        </div>
-                        <div class="price">$4.75</div>
-                    </div>
+                    <div class="gallery layout-grid" id="gallery">
 
-                    <div class="menu_item">
-                        <div class="info_box">
-                            <h3 class="item_name">Iced Latte</h3>
-                            <p class="item_desc">Double shot over milk and ice.</p>
-                        </div>
-                        <div class="price">$5.00</div>
-                    </div>
+                        <article class="item">
+                            <div class="item-img">☕</div>
+                            <div class="item-info">
+                                <h3>Ethiopia Yirgacheffe</h3>
+                                <p>Bright, floral and citrusy.</p>
+                            </div>
+                            <span class="item-date">In stock</span>
+                        </article>
 
-                    <div class="menu_item">
-                        <div class="info_box">
-                            <h3 class="item_name">Matcha Latte</h3>
-                            <p class="item_desc">Ceremonial-grade matcha, oat or dairy milk.</p>
-                        </div>
-                        <div class="price">$5.25</div>
+                        <article class="item">
+                            <div class="item-img">☕</div>
+                            <div class="item-info">
+                                <h3>Colombia Huila</h3>
+                                <p>Balanced body with caramel sweetness and a soft red-apple finish.</p>
+                            </div>
+                            <span class="item-date">In stock</span>
+                        </article>
+
+                        <article class="item">
+                            <div class="item-img">☕</div>
+                            <div class="item-info">
+                                <h3>Brazil Cerrado</h3>
+                                <p>A low-acid, nutty everyday roast with notes of milk chocolate and toasted almond, grown on the high plateaus of the Cerrado region and dried slowly in the sun for weeks.</p>
+                            </div>
+                            <span class="item-date">Low stock</span>
+                        </article>
+
+                        <article class="item">
+                            <div class="item-img">☕</div>
+                            <div class="item-info">
+                                <h3>Guatemala Antigua</h3>
+                                <p>Smoky and spiced.</p>
+                            </div>
+                            <span class="item-date">In stock</span>
+                        </article>
+
+                        <article class="item">
+                            <div class="item-img">☕</div>
+                            <div class="item-info">
+                                <h3>Kenya AA</h3>
+                                <p>Juicy blackcurrant acidity with a wine-like body that our regulars ask for by name.</p>
+                            </div>
+                            <span class="item-date">In stock</span>
+                        </article>
+
+                        <article class="item">
+                            <div class="item-img">☕</div>
+                            <div class="item-info">
+                                <h3>Sumatra Mandheling</h3>
+                                <p>Earthy, heavy body.</p>
+                            </div>
+                            <span class="item-date">In stock</span>
+                        </article>
+
+                        <article class="item">
+                            <div class="item-img">☕</div>
+                            <div class="item-info">
+                                <h3>Costa Rica Tarrazu</h3>
+                                <p>Clean and bright with honey sweetness and a hint of orange peel.</p>
+                            </div>
+                            <span class="item-date">Low stock</span>
+                        </article>
+
+                        <article class="item">
+                            <div class="item-img">☕</div>
+                            <div class="item-info">
+                                <h3>Honduras Marcala</h3>
+                                <p>Mild, easy-drinking, cocoa notes.</p>
+                            </div>
+                            <span class="item-date">In stock</span>
+                        </article>
+
+                        <article class="item">
+                            <div class="item-img">☕</div>
+                            <div class="item-info">
+                                <h3>Rwanda Nyungwe</h3>
+                                <p>Grown near the Nyungwe forest at high altitude, this washed lot has a delicate tea-like body with bright citrus acidity and a lingering floral aftertaste that develops as it cools.</p>
+                            </div>
+                            <span class="item-date">Out of stock</span>
+                        </article>
+
+                        <article class="item">
+                            <div class="item-img">☕</div>
+                            <div class="item-info">
+                                <h3>Peru Cajamarca</h3>
+                                <p>Soft, sweet, organic.</p>
+                            </div>
+                            <span class="item-date">In stock</span>
+                        </article>
+
+                        <article class="item">
+                            <div class="item-img">☕</div>
+                            <div class="item-info">
+                                <h3>Yemen Mocha</h3>
+                                <p>Wild, wine-like acidity with dried-fruit and spice notes from ancient terraced farms.</p>
+                            </div>
+                            <span class="item-date">Limited</span>
+                        </article>
+
+                        <article class="item">
+                            <div class="item-img">☕</div>
+                            <div class="item-info">
+                                <h3>Panama Geisha</h3>
+                                <p>Our most sought-after single-origin lot: jasmine and bergamot aroma, a delicate tea-like body, and a long, sweet, tropical-fruit finish that has won this variety awards worldwide.</p>
+                            </div>
+                            <span class="item-date">Limited</span>
+                        </article>
+
                     </div>
-                </div>
-            </div>  
-            <footer class="container">
-                    <p>&copy; 2026 Enjoyit Coffee.By Yernazar Zhauken</p>
-            </footer>                     
-        </div>             
-    </div>
-</body>
+                </section>
+
+                <footer class="container">
+                        <p>&copy; 2026 Enjoyit Coffee. By Yernazar Zhauken</p>
+                </footer>
+            </main>
+        </div>
+    </body>
 </html>
