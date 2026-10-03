@@ -2,75 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Enjoyit - Filials</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/Filials.css">
 </head>
 <body>
     <div class="wrapper">
 
-        <header class="container header-flex">
-            <span class="Enjoyit">Enjoyit</span>
-            <nav class="main-nav">
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Menu.html">Menu</a></li>
-                    <li class="active"><a href="Filials.html">Filials</a></li>
-                </ul>
-                <div class="nav-btn">
-                    <a href="Book.html" class="btn">Place an order</a>
+        <nav class="navbar navbar-expand-lg container header-flex py-3">
+            <div class="container-fluid px-0">
+                <span class="Enjoyit navbar-brand m-0">Enjoyit</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#filialsNav" aria-controls="filialsNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="filialsNav">
+                    <ul class="navbar-nav nav-links ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link p-0" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link p-0" href="Menu.html">Menu</a></li>
+                        <li class="active nav-item"><a class="nav-link p-0" href="Filials.html">Filials</a></li>
+                    </ul>
+                    <div class="nav-btn ms-lg-3">
+                        <a href="Book.html" class="btn text-decoration-none text-white">Place an order</a>
+                    </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
 
-        <main class="container">
+        <main class="container my-4">
 
+           
             <div class="pricing-section">
                 <h2 class="title">Coffee Subscriptions</h2>
-                <div class="pricing-table">
-                    <div class="plan-card">
-                        <h3>Starter Pass</h3>
-                        <div class="price">$15/mo</div>
-                        <p>5 cups of espresso at any filial per month.</p>
-                        <button class="plan-btn">Choose Plan</button>
+                <div class="row g-4 align-items-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="plan-card h-100">
+                            <h3>Starter Pass</h3>
+                            <div class="price">$15/mo</div>
+                            <p>5 cups of espresso at any filial per month.</p>
+                            <button class="plan-btn">Choose Plan</button>
+                        </div>
                     </div>
-                    <div class="plan-card featured">
-                        <span class="badge">RECOMMENDED</span>
-                        <h3>Coffee Lover</h3>
-                        <div class="price">$35/mo</div>
-                        <p>Unlimited filter coffee and 15% discount on all coffee beans.</p>
-                        <button class="plan-btn active">Choose Plan</button>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="plan-card featured h-100">
+                            <span class="badge">RECOMMENDED</span>
+                            <h3>Coffee Lover</h3>
+                            <div class="price">$35/mo</div>
+                            <p>Unlimited filter coffee and 15% discount on all coffee beans.</p>
+                            <button class="plan-btn active">Choose Plan</button>
+                        </div>
                     </div>
-                    <div class="plan-card">
-                        <h3>Unlimited</h3>
-                        <div class="price">$60/mo</div>
-                        <p>Unlimited drinks every day at any Enjoyit branch.</p>
-                        <button class="plan-btn">Choose Plan</button>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="plan-card h-100">
+                            <h3>Unlimited</h3>
+                            <div class="price">$60/mo</div>
+                            <p>Unlimited drinks every day at any Enjoyit branch.</p>
+                            <button class="plan-btn">Choose Plan</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="locations-section">
                 <h2 class="title">Our Filials</h2>
-                <div class="cards-row">
-                    <div class="card">
-                        <h3>Kazbek Bi 41/1</h3>
-                        <p>Mon-Fri: 7:00-18:00<br>Sat-Sun: 8:00-17:00<br>Main roastery branch with fresh coffee beans.</p>
-                        <a href="Book.html" class="card-btn">Visit Location</a>
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100">
+                            <h3>Kazbek Bi 41/1</h3>
+                            <p>Mon-Fri: 7:00-18:00<br>Sat-Sun: 8:00-17:00<br>Main roastery branch with fresh coffee beans.</p>
+                            <a href="Book.html" class="card-btn">Visit Location</a>
+                        </div>
                     </div>
-                    <div class="card">
-                        <h3>Dostyk Ave 105</h3>
-                        <p>Mon-Sun: 8:00-22:00<br>Cozy atmosphere with a quiet summer terrace.</p>
-                        <a href="Book.html" class="card-btn">Visit Location</a>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100">
+                            <h3>Dostyk Ave 105</h3>
+                            <p>Mon-Sun: 8:00-22:00<br>Cozy atmosphere with a quiet summer terrace.</p>
+                            <a href="Book.html" class="card-btn">Visit Location</a>
+                        </div>
                     </div>
-                    <div class="card">
-                        <h3>Abay Ave 52</h3>
-                        <p>Mon-Fri: 7:30-20:00<br>Express coffee bar right near the metro station.</p>
-                        <a href="Book.html" class="card-btn">Visit Location</a>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100">
+                            <h3>Abay Ave 52</h3>
+                            <p>Mon-Fri: 7:30-20:00<br>Express coffee bar right near the metro station.</p>
+                            <a href="Book.html" class="card-btn">Visit Location</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            
             <div class="pagination-bar">
                 <button class="arrow-btn">&larr;</button>
                 <div class="page-numbers">
@@ -82,10 +101,9 @@
                 <span class="count-text">Showing 3 of 8 filials</span>
             </div>
 
-          
             <div class="comment-section">
                 <h2 class="title">Customer Reviews</h2>
-                <div class="comment-box">
+                <div class="comment-box mb-3">
                     <div class="avatar">A</div>
                     <div class="comment-text">
                         <h4>Aidana K.</h4>
@@ -96,7 +114,7 @@
                     <div class="avatar">M</div>
                     <div class="comment-text">
                         <h4>Marat S.</h4>
-                        <p>I come to the Kazbek Bi roastery almost every day before work. The espresso is consistent, the staff remembers my order, and the beans they sell are noticeably fresher than anything I find in supermarkets. Highly recommend the Coffee Lover subscription if you drink filter coffee daily.</p>
+                        <p>I come to the Kazbek Bi roastery almost every day before work. The espresso is consistent, the staff remembers my order, and the beans they sell are noticeably fresher than anything I find in supermarkets.</p>
                     </div>
                 </div>
             </div>
@@ -108,5 +126,7 @@
         </footer>
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

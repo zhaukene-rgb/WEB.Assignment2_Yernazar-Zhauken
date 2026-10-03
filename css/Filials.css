@@ -1,8 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+*{margin: 0;
+padding: 0;}
+
 
 body {
     font-family: 'Karla', sans-serif;
@@ -18,9 +16,6 @@ body {
 
 header.header-flex {
     padding: 40px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .Enjoyit {
@@ -29,7 +24,6 @@ header.header-flex {
     font-weight: 700;
     color: #241811;
 }
-
 
 .main-nav {
     display: flex;
@@ -94,15 +88,7 @@ header .btn:hover {
     margin-bottom: 50px;
 }
 
-
-.pricing-table {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
 .plan-card {
-    flex: 1;
     background: #faf6ec;
     border: 1px solid #dcd3be;
     border-radius: 8px;
@@ -148,13 +134,7 @@ header .btn:hover {
     color: #faf6ec;
 }
 
-.cards-row {
-    display: flex;
-    gap: 20px;
-}
-
 .card {
-    flex: 1;
     background: #faf6ec;
     border: 1px solid #dcd3be;
     border-radius: 8px;
@@ -225,7 +205,6 @@ header .btn:hover {
     color: #6e655f;
 }
 
-
 .comment-box {
     display: flex;
     gap: 15px;
@@ -234,10 +213,6 @@ header .btn:hover {
     padding: 20px;
     border-radius: 8px;
     align-items: flex-start;
-}
-
-.comment-box + .comment-box {
-    margin-top: 20px;
 }
 
 .avatar {

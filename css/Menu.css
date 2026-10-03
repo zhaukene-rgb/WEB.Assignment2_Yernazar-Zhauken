@@ -1,23 +1,26 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+*{margin: 0;
+padding: 0;}
+
 body {
     min-height: 100vh;
     font-size: 16px;
 }
+
 .wrapper {
     background: linear-gradient(135deg, #faf6ec 0%, #efe6d4 55%, #e8d9bc 100%);
     min-height: 100vh;
 }
+
 .container {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
 }
+
 header {
     padding: 40px 0;
 }
+
 .Enjoyit {
    font-family: 'Fraunces', serif;
    font-size: 22px;
@@ -25,10 +28,12 @@ header {
    letter-spacing: -0.01em;
    color: #241811;
 }
+
 .hero--info {
     max-width: 600px;
     margin: 20px 0 50px;
 }
+
 .hero--info h1 {
     font-family: 'Fraunces', serif;
     font-size: clamp(32px, 5vw, 46px);
@@ -36,6 +41,7 @@ header {
     color: #241811;
     margin-bottom: 12px;
 }
+
 .hero--info h2 {
     font-family: 'Karla', sans-serif;
     font-size: 15px;
@@ -44,17 +50,11 @@ header {
     color: #4a3a2c;
     max-width: 47ch;
 }
+
 .menu_table {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 60px;
-    width: 100%;
     margin: 0 0 40px;
 }
-.column {
-    flex: 1;
-}
+
 .category_title {
     font-size: 14px;
     font-weight: 700;
@@ -65,6 +65,7 @@ header {
     padding-bottom: 15px;
     margin-bottom: 20px;
 }
+
 .menu_item {
     display: flex;
     justify-content: space-between;
@@ -72,26 +73,31 @@ header {
     border-bottom: 1px solid #dcd3be;
     padding: 20px 0;
 }
+
 .item_name {
     font-family: 'Fraunces', serif;
     font-size: 20px;
     color: #241811;
     margin-bottom: 6px;
 }
+
 .item_desc {
     font-size: 14px;
     color: #6e655f;
 }
+
 .price {
     font-family: 'Fraunces', serif;
     font-size: 20px;
     font-weight: 600;
     color: #241811;
 }
+
 footer {
     padding: 30px 0;
     text-align: center;
 }
+
 footer p {
     color: #583636;
     font-size: 14px;
@@ -120,28 +126,6 @@ footer p {
 .layout-grid {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
-
-.layout-list {
-    grid-template-columns: 1fr;
-    gap: 12px;
-}
-
-
-.layout-magazine {
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(140px, auto);
-}
-
-.layout-magazine .item:first-child {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.layout-magazine .item:first-child .item-img {
-    flex: 1;
-    font-size: 48px;
-}
-
 
 .item {
     background: #faf6ec;
@@ -180,24 +164,4 @@ footer p {
     font-size: 12px;
     color: #8f4f1f;
     font-weight: 700;
-}
-
-.layout-list .item {
-    flex-direction: row;
-    align-items: center;
-}
-
-.layout-list .item-img {
-    width: 80px;
-    height: 80px;
-}
-
-.layout-list .item-info {
-    flex: 1;
-    min-width: 0;
-}
-
-.layout-list .item-date {
-    margin-left: auto;
-    flex-shrink: 0;
 }

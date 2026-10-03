@@ -2,7 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Enjoyit.Menu</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/Menu.css">
     </head>
     <body>
@@ -18,8 +20,9 @@
                     <h2>Espresso, filter, and a short list of things to eat with them. Ask your barista what's brewing today.</h2>
                 </div>
 
-                <div class="menu_table">
-                    <div class="column">
+                <!-- Task 2: Bootstrap Grid for Menu Columns -->
+                <div class="menu_table row g-5">
+                    <div class="column col-12 col-md-6">
                         <h2 class="category_title">ESPRESSO</h2>
 
                         <div class="menu_item">
@@ -55,7 +58,7 @@
                         </div>
                     </div>
 
-                    <div class="column">
+                    <div class="column col-12 col-md-6">
                         <h2 class="category_title">FILTER & COLD</h2>
                         <div class="menu_item">
                             <div class="info_box">
@@ -93,7 +96,7 @@
 
                 <section id="beans" class="beans-section">
                     <h2 class="category_title">COFFEE BEANS TO GO</h2>
-                    <p class="mode-note">Current mode: grid of cards. Change the class on the gallery container to "layout-list" or "layout-magazine" to see the other two views — the markup underneath never changes.</p>
+                    <p class="mode-note">Current mode: grid of cards.</p>
 
                     <div class="gallery layout-grid" id="gallery">
 
@@ -119,7 +122,7 @@
                             <div class="item-img">☕</div>
                             <div class="item-info">
                                 <h3>Brazil Cerrado</h3>
-                                <p>A low-acid, nutty everyday roast with notes of milk chocolate and toasted almond, grown on the high plateaus of the Cerrado region and dried slowly in the sun for weeks.</p>
+                                <p>A low-acid, nutty everyday roast with notes of milk chocolate and toasted almond.</p>
                             </div>
                             <span class="item-date">Low stock</span>
                         </article>
@@ -133,78 +136,6 @@
                             <span class="item-date">In stock</span>
                         </article>
 
-                        <article class="item">
-                            <div class="item-img">☕</div>
-                            <div class="item-info">
-                                <h3>Kenya AA</h3>
-                                <p>Juicy blackcurrant acidity with a wine-like body that our regulars ask for by name.</p>
-                            </div>
-                            <span class="item-date">In stock</span>
-                        </article>
-
-                        <article class="item">
-                            <div class="item-img">☕</div>
-                            <div class="item-info">
-                                <h3>Sumatra Mandheling</h3>
-                                <p>Earthy, heavy body.</p>
-                            </div>
-                            <span class="item-date">In stock</span>
-                        </article>
-
-                        <article class="item">
-                            <div class="item-img">☕</div>
-                            <div class="item-info">
-                                <h3>Costa Rica Tarrazu</h3>
-                                <p>Clean and bright with honey sweetness and a hint of orange peel.</p>
-                            </div>
-                            <span class="item-date">Low stock</span>
-                        </article>
-
-                        <article class="item">
-                            <div class="item-img">☕</div>
-                            <div class="item-info">
-                                <h3>Honduras Marcala</h3>
-                                <p>Mild, easy-drinking, cocoa notes.</p>
-                            </div>
-                            <span class="item-date">In stock</span>
-                        </article>
-
-                        <article class="item">
-                            <div class="item-img">☕</div>
-                            <div class="item-info">
-                                <h3>Rwanda Nyungwe</h3>
-                                <p>Grown near the Nyungwe forest at high altitude, this washed lot has a delicate tea-like body with bright citrus acidity and a lingering floral aftertaste that develops as it cools.</p>
-                            </div>
-                            <span class="item-date">Out of stock</span>
-                        </article>
-
-                        <article class="item">
-                            <div class="item-img">☕</div>
-                            <div class="item-info">
-                                <h3>Peru Cajamarca</h3>
-                                <p>Soft, sweet, organic.</p>
-                            </div>
-                            <span class="item-date">In stock</span>
-                        </article>
-
-                        <article class="item">
-                            <div class="item-img">☕</div>
-                            <div class="item-info">
-                                <h3>Yemen Mocha</h3>
-                                <p>Wild, wine-like acidity with dried-fruit and spice notes from ancient terraced farms.</p>
-                            </div>
-                            <span class="item-date">Limited</span>
-                        </article>
-
-                        <article class="item">
-                            <div class="item-img">☕</div>
-                            <div class="item-info">
-                                <h3>Panama Geisha</h3>
-                                <p>Our most sought-after single-origin lot: jasmine and bergamot aroma, a delicate tea-like body, and a long, sweet, tropical-fruit finish that has won this variety awards worldwide.</p>
-                            </div>
-                            <span class="item-date">Limited</span>
-                        </article>
-
                     </div>
                 </section>
 
@@ -213,5 +144,7 @@
                 </footer>
             </main>
         </div>
+        <!-- Bootstrap 5.3 JS Bundle CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
